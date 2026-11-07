@@ -1,0 +1,37 @@
+# Local dependency environments (recreated by `uv sync` / `npm ci`)
+.venv/
+node_modules/
+
+# Compiled Python bytecode
+__pycache__/
+*.pyc
+
+# Environment files with real credentials; only the placeholder template is tracked
+.env
+.env.*
+!.env.example
+
+# Linter, type-checker and test caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Vite production build output
+dist/
+
+# Terraform: state stores resource attributes, including secrets, in plain text
+*.tfstate*
+# Saved plans embed resolved values, including secrets
+*.tfplan
+# Local provider/module cache
+.terraform/
+# Variable files may hold secrets; commit only an explicit example
+*.tfvars
+!*.tfvars.example
+
+# Private keys
+*.pem
+*.key
+
+# macOS
+.DS_Store
